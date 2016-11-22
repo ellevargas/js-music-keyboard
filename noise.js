@@ -7,7 +7,6 @@ $(document).ready(function() {
   };
 
   $('body').keypress(function() {
-      // if (event.key == 'c')
       callback(event.key);
   });
 
@@ -15,14 +14,4 @@ $(document).ready(function() {
     callback($(event.target).text());
   })
 
-  // $('.c').click(function() {
-  //   callback($(this).text())
-  // })
-
 })
-
-// $("#some_id").on("click keyup", function (e) {
-//     if (e.type == "click" || e.keyCode == 27) {
-//         alert("click or esc");
-//     }
-// });
