@@ -11,8 +11,18 @@ $(document).ready(function() {
       callback(event.key);
   });
 
-  $('.c').click(function() {
-    callback($(this).text())
+  $('body').click(function() {
+    callback($(event.target).text());
   })
 
+  // $('.c').click(function() {
+  //   callback($(this).text())
+  // })
+
 })
+
+// $("#some_id").on("click keyup", function (e) {
+//     if (e.type == "click" || e.keyCode == 27) {
+//         alert("click or esc");
+//     }
+// });
